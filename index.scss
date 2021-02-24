@@ -1,6 +1,8 @@
 $primaryColor: #fff;
 $secondaryColor: #1d1d1d;
 $steps: 20;
+$list : 'developer','pianist','seung ho','hoban','floppy';
+$curtext : 'hello';
 
 .main-text{
     position: absolute;
@@ -15,10 +17,13 @@ $steps: 20;
         text-transform: uppercase;
         letter-spacing: 0.02em;
         transform: scale3d(1,1,1);
+        animation: loop-text 10s infinite;
+        content: $curtext;
 
         &::before,
         &::after {
-            content: attr(data-text);
+            animation: loop-text 10s infinite;
+            content: $curtext;
             position: absolute;
             top: 0;
             left: 0;
@@ -32,14 +37,15 @@ $steps: 20;
         &::before {
             left: 7px;
             text-shadow: 2px 0 green;
-            animation: glitch-effect 6s infinite linear alternate-reverse;
+            animation: glitch-effect 3s infinite linear alternate-reverse;
         }
 
         &::after {
             left: 3px;
             text-shadow: -2px 0 red;
-            animation: glitch-effect 4s infinite linear alternate-reverse;
+            animation: glitch-effect 2s infinite linear alternate-reverse;
         }
+
     }
 }
 
@@ -47,6 +53,16 @@ $steps: 20;
     @for $i from 0 through $steps{
         #{percentage($i*(1/$steps))}{
             clip:rect(random(100)+px,9999px,random(100)+px,0);
+        }
+    }
+}
+
+@keyframes loop-text{
+    @for $i from 1 through 10 {
+        $number: $i * 10;
+        $percent: $number + "%";
+        #{$percent} {
+            content: $i + "";
         }
     }
 }
