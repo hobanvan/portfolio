@@ -1,29 +1,23 @@
 $primaryColor: #fff;
 $secondaryColor: #1d1d1d;
 $steps: 20;
-$list : 'developer','pianist','seung ho','hoban','floppy';
-$curtext : 'hello';
 
-.main-text{
+.main-text {
     position: absolute;
     top: 50%;
     left: 88%;
     transform: translate(-50%, -88%);
-    h1{
+    h1 {
         font-size: 80px;
-        font-family: "Exo", sans-serif;
+        font-family: 'Exo', sans-serif;
         font-weight: 600;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.02em;
-        transform: scale3d(1,1,1);
-        animation: loop-text 10s infinite;
-        content: $curtext;
+        transform: scale3d(1, 1, 1);
 
         &::before,
         &::after {
-            animation: loop-text 10s infinite;
-            content: $curtext;
             position: absolute;
             top: 0;
             left: 0;
@@ -32,41 +26,31 @@ $curtext : 'hello';
             background: $secondaryColor;
             color: $primaryColor;
             clip: rect(0, 900px, 0, 0);
-
         }
         &::before {
+            content: attr(data-text);
             left: 7px;
             text-shadow: 2px 0 green;
             animation: glitch-effect 3s infinite linear alternate-reverse;
         }
 
         &::after {
+            content: attr(data-text);
             left: 3px;
             text-shadow: -2px 0 red;
             animation: glitch-effect 2s infinite linear alternate-reverse;
         }
-
     }
 }
 
-@keyframes glitch-effect{
-    @for $i from 0 through $steps{
-        #{percentage($i*(1/$steps))}{
-            clip:rect(random(100)+px,9999px,random(100)+px,0);
+@keyframes glitch-effect {
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100) + px, 9999px, random(100) + px, 0);
         }
     }
 }
 
-@keyframes loop-text{
-    @for $i from 1 through 10 {
-        $number: $i * 10;
-        $percent: $number + "%";
-        #{$percent} {
-            content: $i + "";
-        }
-    }
-}
-
-body{
+body {
     background-color: #1d1d1d !important;
 }
