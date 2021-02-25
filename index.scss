@@ -46,6 +46,9 @@ $steps: 20;
             text-shadow: -2px 0 red;
             animation: glitch-effect 2s infinite linear alternate-reverse;
         }
+        &:hover{
+            cursor:pointer;
+        }
     }
 }
 

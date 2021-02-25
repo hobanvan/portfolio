@@ -1,12 +1,14 @@
-var list = new Array('hello!', 'pianist', 'developer', 'hoban', 'floppy');
+var list = new Array('안녕하세요!', 'pianist', 'developer', 'hoban', 'floppy');
 var space = '_'
 var changecount = 0;
 var index = 0;
 var length = 0;
 var lengthcount = 0;
+
+var toggle = false;
+
 function myTimer() {
     length = list[index].length;
-    console.log(length);
     changecount++;
     if(changecount==50){
         changecount = 0;
@@ -38,3 +40,12 @@ function myTimer() {
 }
 
 var myVar = setInterval(myTimer, 100);
+
+var clickmaintext = document.getElementById('contextchange');
+
+clickmaintext.addEventListener('click',function(){
+
+    
+
+})
+
