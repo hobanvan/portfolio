@@ -275,7 +275,7 @@ $grid-breakpoints: (
     // Medium screen / tablet
     lg: 992px,
     // Large screen / desktop
-    xl: 1200px // Extra large screen / wide desktop,,
+    xl: 1200px // Extra large screen / wide desktop,,,
 ) !default;
 
 // Breakpoint viewport sizes and media queries.
@@ -676,6 +676,9 @@ $grid-breakpoints: (
             visibility: visible;
             width: 100%;
             transition-duration: 0.15s, 0.25s, 0.25s;
+            .main {
+                margin-left: 100pxs;
+            }
         }
     }
 

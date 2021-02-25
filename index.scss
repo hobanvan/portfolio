@@ -2,22 +2,28 @@ $primaryColor: #fff;
 $secondaryColor: #1d1d1d;
 $steps: 20;
 
-.main{
-    position:absolute;
-    width: 90%;
+.main {
+    position: absolute;
     top: 45%;
+    margin-left: 5%;
+}
+
+.ml {
+    margin-left: 300px;
+}
+
+#sub-text {
+    h1 {
+        font-size: 36px;
+        font-weight: 400;
+    }
 }
 
 .main-text {
-    float: right;
-    vertical-align: middle;
-    //transform: translate(-50%, -88%);
     h1 {
-        
-        font-size: 80px;
+        font-size: 70px;
         font-family: 'Exo', sans-serif;
         font-weight: 600;
-        vertical-align: middle;
         text-transform: uppercase;
         letter-spacing: 0.02em;
         transform: scale3d(1, 1, 1);
@@ -35,19 +41,19 @@ $steps: 20;
         }
         &::before {
             content: attr(data-text);
-            left: 7px;
-            text-shadow: 2px 0 green;
-            animation: glitch-effect 3s infinite linear alternate-reverse;
+            left: 4px;
+            text-shadow: 2px 2px green;
+            animation: glitch-effect 4s infinite linear alternate-reverse;
         }
 
         &::after {
             content: attr(data-text);
             left: 3px;
-            text-shadow: -2px 0 red;
-            animation: glitch-effect 2s infinite linear alternate-reverse;
+            text-shadow: -2px -2px red;
+            animation: glitch-effect 3s infinite linear alternate-reverse;
         }
-        &:hover{
-            cursor:pointer;
+        &:hover {
+            cursor: pointer;
         }
     }
 }
@@ -62,5 +68,10 @@ $steps: 20;
 
 body {
     background-color: #1d1d1d !important;
+    height: 100%;
+}
+
+canvas {
+    width: 100%;
     height: 100%;
 }
