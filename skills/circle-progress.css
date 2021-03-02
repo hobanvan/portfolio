@@ -3,7 +3,6 @@
   height: 160px !important;
   line-height: 160px;
   background: none !important;
-  margin: 0 auto;
   -webkit-box-shadow: none;
           box-shadow: none;
   position: relative;
@@ -41,7 +40,6 @@
   border-style: solid;
   position: absolute;
   top: 0;
-  border-color: #ffb43e;
 }
 
 .progress .progress-left .progress-bar {

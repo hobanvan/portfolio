@@ -2,7 +2,7 @@
 $borderWidth: 5px;
 $animationTime: .5s;
 $border-color-default: #efefef;
-$border-color-fill: #ffb43e;
+$border-color-fill: #ff4800;
 $size: 160px;
 $howManySteps: 100; //this needs to be even. 
 
@@ -11,7 +11,6 @@ $howManySteps: 100; //this needs to be even.
   height: $size !important;
   line-height: $size;
   background: none !important;
-  margin: 0 auto;
   box-shadow: none;
   position: relative;
   &:after {
@@ -43,7 +42,6 @@ $howManySteps: 100; //this needs to be even.
     border-style: solid;
     position: absolute;
     top: 0;
-    border-color: $border-color-fill;
   }
   .progress-left .progress-bar {
     left: 100%;
