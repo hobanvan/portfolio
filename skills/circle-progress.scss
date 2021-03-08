@@ -13,6 +13,7 @@ $howManySteps: 100; //this needs to be even.
   background: none !important;
   box-shadow: none;
   position: relative;
+  margin: 0 auto;
   &:after {
     content: "";
     width: 100%;
