@@ -2,13 +2,17 @@ body {
     background-color: #1d1d1d !important;
 }
 
-.item-div{
-    text-align: center;
-    .skill-img {
-        display: inline-block;
-        width: 75px;
-        height: 75px;
-        position: absolute;
-    }
+
+.skill-img {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    margin-top: 37.5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
