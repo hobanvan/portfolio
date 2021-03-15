@@ -1,4 +1,7 @@
-cir_progress = ;
+var array = [['skills-pictures/html.png','78','#f16529','HTML'],
+             ['skills-pictures/css.png','90','#2965f1','CSS'],
+             ['skills-pictures/javascript.png','85','#f7e018','JS'],
+             ['skills-pictures/sass.png','66','#ce679a','Sass']];
 
 for (let index = 0; index < array.length; index++) {
     cir_progress += `
@@ -22,5 +25,5 @@ for (let index = 0; index < array.length; index++) {
     `
     
 }
-
-document.getElementById('').innerHTML
+console.log(cir_progress);
+document.getElementById('additemweb').innerHTML(cir_progress);
