@@ -1,7 +1,8 @@
 var array = [['skills-pictures/html.png','77','#f16529','HTML'],
              ['skills-pictures/css.png','80','#2965f1','CSS'],
              ['skills-pictures/javascript.png','86','#f7e018','JS'],
-             ['skills-pictures/sass.png','65','#ce679a','Sass']];
+             ['skills-pictures/sass.png','65','#ce679a','Sass'],
+             ['skills-pictures/django.png','75','#ce679a','Django']];
 var cir_progress;
 
 for (let index = 0; index < array.length; index++) {
