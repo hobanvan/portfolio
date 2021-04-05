@@ -67,4 +67,12 @@ var myVar = setInterval(myTimer, 100);
 
 var clickmaintext = document.getElementById('contextchange');
 
+var agent = navigator.userAgent.toLowerCase();
+
+if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+
+  alert("해당 브라우저는 지원하지 않습니다. \nMicrosoft Edge 또는 Chorme을 이용해주세요.");
+
+}
+
 clickmaintext.addEventListener('click', function () {});
