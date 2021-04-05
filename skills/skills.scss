@@ -2,7 +2,6 @@ body {
     background-color: #1d1d1d !important;
 }
 
-
 .skill-img {
     display: inline-block;
     width: 75px;
@@ -15,13 +14,25 @@ body {
     margin-right: auto;
 }
 
-.skill-main{
-    width: 100%;
+.skill-main {
     height: 100vh;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 25%;
+    width: 75%;
+    vertical-align: middle;
+    display: table-cell;
+    .skill-text {
+    }
+    h1 {
+        font-size: 72px;
+    }
+    a {
+        font-size: 18px;
+    }
 }
-.container
-{
-    h1{
+.container {
+    h1 {
         color: white;
         text-align: center;
         margin: 30px 0;
@@ -30,11 +41,10 @@ body {
     }
 }
 
-#demo{
+#demo {
     background-color: black;
 }
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-#additemweb{
-    
+#additemweb {
 }
